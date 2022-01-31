@@ -1,0 +1,255 @@
+/* font url */
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Oswald:wght@200;600;700&family=Supermercado+One&family=Zen+Kurenaido&display=swap');
+
+.root{
+  --bg: '#2E3440';
+  --bgg: '#3B4252';
+  --bggg: '#434C5E';
+  --bgggg: '#4C566A';
+
+  /* light */
+  --lg: '#ECEFF4';
+  --lgg: '#E5E9F0';
+  --lggg: '#D8DEE9';
+
+  /* frost */
+  --fg: '#8FBCBB';
+  --fgg: '#88C0D0';
+  --fggg: '#81A1C1';
+  --fgggg: '#5E81AC';
+
+  /* Aurora */
+  --ag: '#BF616A';
+  --agg: '#D08770';
+  --aggg: '#EBCB8B';
+  --agggg: '#A3BE8C';
+  --aggggg: '#B48EAD';
+
+}
+
+
+
+
+.container {
+  padding: 0 2rem;
+  font-family: 'Zen Kurenaido', sans-serif;
+  background-color: #2E3440;
+  color: #A3BE8C;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #D8DEE9;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #BF616A;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #40506b;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  color: inherit;
+  background-color: #434C5E;
+  text-decoration: none;
+  border: 1px solid #4C566A;
+  border-radius: 10px;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card:hover,
+.card:focus,
+.card:active {
+  color: #D08770;
+  border-color: #D08770;
+}
+
+.card h2 {
+  margin: 0 0 1rem 0;
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin: 0;
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+.button{
+  padding: 20px 44px;
+  border-radius: 6px;
+  background: #EBCB8B;
+  border-color: #D08770;
+  cursor:pointer;
+}
+
+.button:hover{
+  background: #BF616A;
+  border-color: #D08770;
+}
+.from_input{
+  margin-right: .5rem;
+  height: 56px;
+  width: 500px;
+  font-size: 30px;
+  padding-left: 10px;
+}
+.status{
+  font-size: 20px;
+  background: #dd8beb;
+  color: rgb(24, 3, 3);
+  padding: 5px 10px;
+  margin-left: 50px;
+}
+
+.location{
+  color: #88C0D0;
+}
+
+
+.from_button {
+  padding: 16px 38px;
+  border-radius: 6px;
+  font-size: 20px;
+  background: #88C0D0;
+  border-color: #658c97;
+  cursor:pointer;
+}
+
+.profile{
+  display: flex;
+  margin-top: 2rem;
+}
+
+.profile_details h2{
+  margin-left: 20px;
+}
+
+.profile_details strong{
+  color: #BF616A;
+  font-family: 'Oswald', sans-serif;
+}
+
+.profile_details li:hover{
+  text-decoration: underline;
+  background: #4f6d754b;
+}
+
+.back_button{
+  padding: 16px 38px;
+  background: #381103b0;
+  color: #d6601b;
+  border-radius: 6px;
+}
+
+
+@media (max-width: 600px) {
+  .profile{
+    flex-direction: column;
+    margin-top: 2rem;
+  }
+
+  .card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+
+    padding: 1rem;
+  }
+  .from{
+    align-items: center;
+  }
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+  .from_input{
+    margin-right: .5rem;
+    height: 40px;
+    width: 200px;
+    font-size: 30px;
+    padding-left: 10px;
+  }
+  .from_button {
+    padding: 16px 16px;
+    border-radius: 6px;
+    font-size: 20px;
+    background: #88C0D0;
+    border-color: #658c97;
+    cursor:pointer;
+    align-items: center;
+  }
+}
